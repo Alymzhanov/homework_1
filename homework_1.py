@@ -9,7 +9,7 @@ dp = Dispatcher()
 @dp.message(Command("start"))
 async def start_game(message: types.Message):
     """Обработка команды /start"""
-    await message.answer("Давайте сыграем в 'Камень, ножницы, бумага'! Напишите свой выбор: Камень, Ножницы или Бумага.")
+    await message.answer("Давайте сыграем в 'Камень, ножницы, бумага' Напишите свой выбор: Камень, Ножницы или Бумага")
 
 @dp.message()
 async def handle_rps(message: types.Message):
